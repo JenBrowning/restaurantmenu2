@@ -48,9 +48,14 @@ dd {
     display: inline; 
     margin: 0;
 }
+dt::after {
+    content: ", "; 
+}
 dd::after {
-    content: ", "; display: block; 
-    clear: both; margin-bottom: 15px;
+    content: " "; 
+    display: block; 
+    clear: both; 
+    margin-bottom: 15px;
 }
 
 .price {
@@ -64,12 +69,12 @@ dd::after {
 }
 
 /* draw a 2px thick black border around the starters and desserts sections of the menu */
-.starter {
-    border: black 2px solid thick;
+#desserts {
+    border: black 2px solid;
 }
 
-.dessert {
-    border: black 2px solid thick;
+#starters {
+    border: black 2px solid;
 }
 
 © 2018 GitHub, Inc.
